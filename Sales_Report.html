@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>SALES REPORT</title>
+	
+	<style>
+		body {
+				background-image : url("image/background.jpg");
+		     }
+		
+		h1 {
+				color : #151B54;
+				padding : 10px 10px;
+				font-size : 70px;
+				text-align : center;
+				margin-top : 260px;
+				background-image: linear-gradient(to right, #FFDFDD , #EDC9AF);
+				opacity : 0.8;
+				margin-right : 313px;
+				margin-left : 305px;
+				letter-spacing : 5px;
+				font-family : Brush Script MT;
+		   }
+		
+		.button {
+				  border-radius: 8px;
+				  background-color: #FFA500;
+				  border: 4px solid black;
+				  color: #FFFFFF;
+				  text-align: center;
+				  font-size: 24px;
+				  padding: 15px;
+				  width: 300px;
+				  transition: all 0.5s;
+				  cursor: pointer;
+				  margin-right: 30px;
+				  margin-top : 100px;
+				  float: right;
+				  font-family: Tahoma;
+				  letter-spacing: 2px;
+				  display: block;
+			    }
+
+		.button span {
+						cursor: pointer;
+						position: relative;
+						transition: 0.5s;
+					 }
+
+		.button span:after {
+							  content: '\00bb';
+							  position: absolute;
+							  opacity: 0;
+							  top: 0;
+							  right: -20px;
+							  transition: 0.5s;
+						   }
+
+		.button:hover span {
+								padding-right: 25px;
+						   }
+
+		.button:hover span:after {
+									opacity: 1;
+								    right: 0;
+								 }
+	</style>
+	
+	<script>
+		function viewMonthly()
+		{
+			document.location.href= "Monthly.html";
+		}
+		function viewYearly()
+		{
+			document.location.href= "Yearly.html";
+		}
+	</script>
+<head>
+
+<body>
+	<h1>SALES REPORT</h1>
+
+	<button class= "button" onclick= "viewYearly()"><span>VIEW YEARLY</span></button>
+	<button class= "button" onclick= "viewMonthly()"><span>VIEW MONTHLY</span></button>
+</body>
+
+</html>

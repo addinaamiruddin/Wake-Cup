@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>DARK ROASTED BEANS</title>
+	
+	<style>
+		* {
+			box-sizing: border-box;
+		  }
+
+		.column {
+				  float: left;
+				  width: 50%;
+				  padding: 20px;
+				}
+
+		.row::after {
+					  content: "";
+					  clear: both;
+					  display: table;
+					  
+					}
+					
+		body {overflow-y: scroll;}
+					
+		body::-webkit-scrollbar {
+									display: none;
+								}
+								
+		.column img {
+						border: 3px solid white;
+					}
+					
+		.column img:hover {
+							cursor: pointer;
+							box-shadow:10px 10px 20px #FF6700;
+							border: 4px solid white;
+						  }
+	</style>
+	
+	<script>
+		function manage_product()
+		{
+			document.location.href= "Manage_Products.html";
+		}
+	</script>
+</head>
+
+<body style= "background-image: url(image/background.jpg); background-repeat: no-repeat; background-size: cover;">
+	<div class="row">
+	  <div class="column">
+		<img src="image/guatamela_SHB.png" style="width: 100%" onclick= "manage_product();">
+	  </div>
+	  
+	  <div class="column">
+		<img src="image/honduras.png" style="width: 100%" onclick= "manage_product();">
+	  </div>
+	  
+	  <div class="column">
+		<img src="image/colombia_popayan.png" style="width: 100%" onclick= "manage_product();">
+	  </div>
+	  
+	  <div class="column">
+		<img src="image/ethiopia.png" style="width: 100%" onclick= "manage_product();">
+	  </div>
+	  
+	  <div class="column">
+		<img src="image/guatamela_el.png" style="width: 100%" onclick= "manage_product();">
+	  </div>
+	  
+	  <div class="column">
+		<img src="image/indonesia_trinity.png" style="width: 100%" onclick= "manage_product();">
+	  </div>
+	  
+	  <div class="column">
+		<img src="image/lazarus_coffee.png" style="width: 100%" onclick= "manage_product();">
+	  </div>
+	  
+	  <div class="column">
+		<img src="image/swiss.png" style="width: 100%" onclick= "manage_product();">
+	  </div>
+	</div>
+</body>
+
+</html>

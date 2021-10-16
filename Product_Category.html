@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>PRODUCT CATEGORY</title>
+	
+	<style>
+		
+		* {
+			box-sizing: border-box;
+			margin-left: 19px;
+			margin-top: 10px;			
+			background-color : #835C3B;
+		  }
+
+		.coffee_category {
+						  float: left;
+						  width: 28%;
+						 }
+		.coffee_category img {
+								border : 5px solid #FF6700;
+								border-radius : 15px;
+							 }
+		.coffee_category:hover {
+								cursor: pointer;
+								box-shadow: 20px 20px 15px #F2BB66; 
+							   }
+		.row::after {
+					  content: "";
+					  clear: both;
+					  display: table;
+		            }
+		@font-face {
+					font-family: akronim;
+					src:  url('font/Akronim-Regular.ttf');
+			       }		
+					
+		h2 {
+			 text-align : center;
+			 font-size : 90px;
+			 font-family : akronim;
+		   }
+	</style>
+	
+	<script>
+		function navigate_dark()
+		{
+			document.location.href = "Manage_Product.html";
+		}
+		function navigate_medium()
+		{
+			document.location.href = "Manage_Product.html";
+		}
+		function navigate_light()
+		{
+			document.location.href = "Manage_Product.html";
+		}
+	</script>
+</head>
+
+<body>
+	
+	<h2>PRODUCT CATEGORY</h2>
+	
+	<div class= "row">
+	<figure class= "coffee_category">
+		<img src= "image/dark_coffee.png" width= "400px" height= "400px" title= "DARK COFFEE BEANS" onclick= "navigate_dark()"/>
+	</figure>
+	
+	<figure class= "coffee_category">
+		<img src= "image/medium_coffee.png" width= "400px" height= "400px" title= "MEDIUM COFFEE BEANS" onclick= "navigate_medium()"/>
+	</figure>
+	
+	<figure class= "coffee_category">
+		<img src= "image/light_coffee.png" width= "400px" height= "400px" title= "LIGHT COFFEE BEANS" onclick= "navigate_light()"/>
+	</figure>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+		
+		*{
+			box-sizing: border-box;
+			font-size: 1em;
+			margin: 0;
+			padding: 0;
+		 }
+		 
+		body{
+				background: url("image/background.jpg") no-repeat;
+				background-size: cover;
+				color: black; 
+				font-size: 16px;
+				font-family: 'Raleway', sans-serif;
+			}
+		.container {
+						border-radius: 0.6em;
+						border : 2px solid #FF6700;  
+						display: block;
+						max-width: 550px; 
+						transform: translate(-50%, -50%);
+						padding: 0.5em;
+						
+						position: absolute;
+							top: 49.5%;
+							left: 50%;
+							z-index: 1;
+						width: 100%;
+					}
+						  
+		.container:after {
+							background: white; 
+							opacity : 0.7;
+							content: '';
+							display: block;
+							height: 100%;
+							position: absolute;
+								top: 0;
+								left: 0;
+								z-index: -1;
+							width: 100%;
+                         }
+
+		label {
+				border-bottom: 3px solid #333;
+				display: block;
+				margin-bottom: 0.9em;	
+				font-size: 1.0em;
+			  }
+			  
+		.col-one-half {
+						float: left;
+						width: 50%;
+					  }
+					  
+		.col-one-half:nth-of-type(even){
+											border-left: 3px solid #333;
+											padding-left: 0.25em;
+                                       }
+									   
+		form label input {
+							background: none;
+							border: none;
+							line-height: 1em;
+							font-weight: 400;
+							padding: 0.4em 0.3em;
+							width: 100%;
+							outline : none;
+						 }
+
+
+		.label-text {
+						display: block;
+						font-size: 0.85em;
+						font-weight: bold;
+						padding-left: 0.5em;
+					}
+
+		h1  {
+				font-size: 3em;
+				margin: 0 0 0.7em 0;
+				text-align: center;
+				font-family: 'Cookie', cursive;
+		    }
+			
+		h1 img  {
+					height: auto;
+					margin: 0 auto;
+					max-width: 240px;
+					width: 100%;
+                }
+
+		.text-center {
+						display: block;
+						text-align : center;
+					 }
+					 
+		.submit {
+					background: #966F33;
+					border: 3px solid #333;
+					line-height: 1em;
+					padding: 0.5em 0.4em;
+					margin-bottom : 15px;
+					margin-right : 15px;
+					display : inline-block;
+					cursor : pointer;
+					border-radius : 8px;
+					letter-spacing : 1px;
+			    }
+		.submit:hover {
+						background-color: #3E8E41;
+					    box-shadow: 3px 5px #666;
+						font-weight: bold;
+					  }
+	</style>
+	
+	<script>
+		function get_order()
+		{
+			alert("Order has been added sucessfully. \nThank you!");
+		}
+		function delete_order()
+		{
+			alert("Order has been deleted sucessfully. \nThank you!");
+		}
+		function update_order()
+		{
+			alert("Order has been updated sucessfully. \nThank you!");
+		}
+	</script>
+</head>
+<body>
+<div class="container">
+
+	<header>
+		<h1>
+			<a href="#">
+				<img src="image/coffee_logo.png" alt="coffee_logo">
+			</a>
+		</h1>
+	</header>
+	
+	<h1 class="text-center">ORDER</h1>
+	
+	<form class="registration_form">
+		<label class="col-one-half">
+			<span class="label-text">ORDER ID</span>
+			<input type="code" name="orderID">
+		</label>
+		
+		<label class="col-one-half">
+			<span class="label-text">CUSTOMER ID</span>
+			<input type="code" name="customerID">
+		</label>
+		
+		<label>
+			<span class="label-text">ORDER DATE</span>
+			<input type="date" name="orderDate">
+		</label>
+		
+		<label>
+			<span class="label-text">ORDER QUANTITY</span>
+			<input type="number" name="orderQuantity" min= "1">
+		</label>
+		
+		<div class="text-center">
+			<button class="submit" name="register" onclick= "get_order()">ADD ORDER</button>
+			<button class="submit" name="register">VIEW ORDER</button>
+			<button class="submit" name="register" onclick= "delete_order()">DELETE ORDER</button>
+			<button class="submit" name="register" onclick= "update_order()">UPDATE ORDER</button>
+		</div>
+	</form>
+</div>
+</body>
+</html>
