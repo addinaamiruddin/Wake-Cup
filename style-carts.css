@@ -8,12 +8,12 @@ body
 {
     font-family: 'Work Sans', sans-serif;
 }
+
 .navbar
 {
     display: flex;
     align-items: center;
     padding: 20px;
-    padding-bottom: 0px;
 }
 nav{
     flex: 1;
@@ -44,8 +44,6 @@ p
     margin-right: auto;
     padding-left: 25px;
     padding-right: 25px;
-    font-family: 'Work Sans', sans-serif;
-
 }
 .row
 {
@@ -53,30 +51,6 @@ p
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-.col-2
-{
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col-2 .rating .fa 
-{
-    color: #FFD700;
-    margin-left: 0%;
-    margin-right: 10px;
-}
-.col-2 img
-{
-    max-width: 100%;
-    padding: 100px 0;
-}
-.col-2 h1
-{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-    color: #452b25;
-    font-family: 'Lora', serif;
 }
 .btn
 {
@@ -88,13 +62,9 @@ p
     border-radius: 30px;
     transition: background 0.5s;
 }
-.col-2 .btn a:hover
+.btn:hover 
 {
-    text-decoration: none;
-}
-.btn:hover
-{
-    background: #563434;
+    background: %563434;
 }
 .header
 {
@@ -124,19 +94,6 @@ p
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    //background-color: green;
-}
-.row-2 h2 
-{
-    color: #6f4e37;
-}
-.small-container a:hover
-{
-    text-decoration: underline;
-}
-.small-container .col-2 .btn:hover
-{
-    text-decoration: none;
 }
 .col-4
 {
@@ -162,6 +119,9 @@ p
 {
     content: '';
     background: #6f4e37;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -178,8 +138,7 @@ h4
 }
 .rating .fa 
 {
-    color: #FFD700;
-    text-align: center;
+    color: #ff523b;
 }
 .col-4:hover
 {
@@ -340,7 +299,7 @@ select:focus
 /*--------single product details-----*/
 .single-product
 {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .single-product .col-2 img
 {
@@ -377,35 +336,47 @@ select:focus
 }
 .single-product .fa
 {
-    color: #6f4e37;
+    color: brown;
     margin-left: 20px;
 }
 
 /*--cart items details--*/
 .cart-page
 {
-    margin: 80px auto;
+    margin: 30px auto;
     border-collapse: collapse;
 
 }
+.cart-page > p
+{
+    margin: 30px;
+}
+
 .cart-info
 {
     display: flex;
     flex-wrap: wrap;
-    ;
+}
+.cart-info p
+{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.cart-info small
+{
+    font-size: 15px;
 }
 th
 {
     text-align: left;
-    padding: 5px;
+    padding-left: 20px;
     color: white;
-    background: #6f4e37;
+    background: #856647;
     font-weight: normal;
-    
 }
 td
 {
-    padding: 10px 5px;
+    padding: 20px;
 }
 td input
 {
@@ -416,13 +387,13 @@ td input
 td a
 {
     color: rgb(255, 0, 0);
-    font-size: 12px;
+    font-size: 15px;
 
 }
 td img
 {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     margin-right: 10px;
     
 }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="style-carts.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lora:ital,wght@1,700&family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
+        <script>
+            function calc_total1 (price1)
+            {
+                var weight, qty, total;
+
+                weight=parseInt(document.totalform1.weight.value);
+                qty=parseInt(document.totalform1.quantity.value);
+                console.log("Here " + weight);
+                total=weight*qty*price1;
+                document.getElementById("display-weight1").innerHTML="RM " + total.toFixed(2);
+
+                calc_subtotal(total);
+            }
+            function calc_total2 (price2)
+            {
+                var weight, qty, total;
+
+                weight=parseInt(document.totalform2.weight.value);
+                qty=parseInt(document.totalform2.quantity.value);
+                console.log("Here " + weight);
+                total=weight*qty*price2;
+                document.getElementById("display-weight2").innerHTML="RM " + total.toFixed(2);
+                
+                calc_subtotal(total);
+            }
+            function calc_total3 (price3)
+            {
+                var weight, qty, total;
+
+                weight=parseInt(document.totalform3.weight.value);
+                qty=parseInt(document.totalform3.quantity.value);
+
+                total3=weight*qty*price3;
+                document.getElementById("display-weight3").innerHTML="RM " + total.toFixed(2);
+                
+                calc_subtotal(total);
+            }
+            function calc_subtotal(total)
+            {
+                var subtotal=0;
+                subtotal=total+subtotal;
+
+                document.getElementById("subtotal").innerHTML="RM " + subtotal.toFixed(2);
+
+            }
+        </script>
+    </head>
+    <body>
+        
+   
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="coffee-icon.png" height="80px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="all-products/all-products.html" target="_blank">Products</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html" target="_blank"><img src="cart.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()"></a>
+                
+            </div>
+        </div>
+
+        <!--cart items details-->
+        <div class="small-container cart-page">
+                <table style="width: 100%;">
+                <tr style="height: 40px;">
+                    <th style="border-radius: 5px 0 0 5px;">Product</th>
+                    <th>Weight</th>
+                    <th>Quantity</th>
+                    <th style="width: 200px; padding-right: 20px; border-radius: 0 5px 5px 0;">Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <a href="product-details/product-details-WC004.html" target="_blank"><img src="coffeebeans-image/WC004.jpg"></a>
+                            
+                            <div>
+                                <p>Colombia Popayan Excelso</p>
+                                <small>Price : RM54.00</small>
+                                <br>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                        
+                    <td>
+                        <form name="totalform1">
+                            <select name="weight" onchange="calc_total1(54);">
+                                <option value="1">250 gram</option>
+                                <option value="2">500 gram</option>
+                                <option value="3">750 gram</option>
+                                <option value="4">1000 gram</option>
+                            </select>
+                        
+                    </td>
+                     
+                    <td><input name="quantity" type="number" value="1" onchange="calc_total1(54);"></td>
+                    <td><h4 id="display-weight1">RM 54.00</h4></td>
+                        </form>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <a href="product-details/product-details-WC009.html" target="_blank"><img src="coffeebeans-image/WC009.jpg"></a>
+                            
+                            <div>
+                                <p>Espresso Supreme</p>
+                                <small>Price : RM36.00</small>
+                                <br>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                        <td>
+                            <form name="totalform2"></form>
+                            <select name="weight" onchange="calc_total2(36);">
+                                <option value="1">250 gram</option>
+                                <option value="2">500 gram</option>
+                                <option value="3">750 gram</option>
+                                <option value="4">1000 gram</option>
+                            </select>
+                        </td>
+                            
+                        <td><input name="quantity" type="number" value="1" onchange="calc_total2(36);"></td>
+                        <td><h4 id="display-weight2">RM 36.00</h4></td>
+                    </form>
+                        
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <a href="product-details/product-details-WC007.html" target="_blank"><img src="coffeebeans-image/WC007.jpg"></a>
+                            
+                            <div>
+                                <p>Indonesia Kamu Kamu</p>
+                                <small>Price : RM50.00</small>
+                                <br>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                        <td>
+                            <form name="totalform3"></form>
+                            <select name="weight" onchange="calc_total3(50);">
+                                <option value="1">250 gram</option>
+                                <option value="2">500 gram</option>
+                                <option value="3">750 gram</option>
+                                <option value="4">1000 gram</option>
+                            </select>
+                        </td>
+                            
+                        <td><input name="quantity" type="number" value="1" onchange="calc_total3(50);"></td>
+                        <td><h4 id="display-weight3">RM 50.00</h4></td>
+                    </form>
+                </tr>
+            </table>
+
+            <div class="total-price">
+
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td id="subtotal">RM200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>RM216.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    <!--javascript for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle()
+        {
+            if (MenuItems.style.maxHeight=="0px")
+            {
+                MenuItems.style.maxHeight="200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+
+
+    </body>
+</html>
