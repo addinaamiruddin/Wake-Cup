@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Staff</title>
+	<script type="text/javascript">
+		function get_addStaff()
+		{
+			document.location.href="addStaff.html";
+		}
+		function get_viewStaff()
+		{
+			document.location.href="viewStaff.html";
+		}
+		function get_deleteStaff()
+		{
+			document.location.href="deleteStaff.html";
+		}
+		function get_updateStaff()
+		{
+			document.location.href="updateStaff.html";
+		}
+	</script>
+	<style type="text/css">
+		body{
+			background-image: url("images/bg img4.jpeg");
+			background-size: cover;
+			opacity: 95%;
+			}
+		@font-face{
+			font-family: sora;
+			src:  url(fonts/sora.ttf);
+			}
+		@font-face{
+			font-family: aclonica;
+			src:  url(fonts/aclonica.ttf);
+			}
+		.wrapper{
+			position: fixed;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+  			margin-left: auto;
+  			margin-right: auto;
+  			font-family: 'sora';
+  			text-align: center;
+		}
+		.content{
+			background-color: #dbc5b6;
+			width: 450px;
+			height: 400px;
+			box-shadow: 0px 8px 60px -10px #ceb19c;
+			border-radius: 10px;
+			padding:70px;
+			padding-top:5px;
+		}
+		h1{
+			font-family: 'aclonica';
+		}
+		hr{
+			border: 1px solid #ae7d5b;
+		}
+		button{
+			width:50%;
+			padding: 10px 20px;
+			margin: 15px 0;
+			background-color: #bb9175; 
+			border: 2px solid #966a4a;
+			border-radius: 50px;
+			color: black;
+			font-weight: bold;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			cursor:pointer;
+			font-family: 'sora';
+		}
+		.button1{
+			background-image: url('images/add.png');
+			background-position:20px 6px;
+  			background-size:15%;
+			background-repeat: no-repeat;
+			padding-left: 30px;
+		}
+		.button2{
+			background-image: url('images/view.png');
+			background-position:20px 6px;
+  			background-size:15%;
+			background-repeat: no-repeat;
+			padding-left: 35px;
+		}
+		.button3{
+			background-image: url('images/delete.png');
+			background-position:20px 6px;
+  			background-size:15%;
+			background-repeat: no-repeat;
+			padding-left: 40px;
+		}
+		.button4{
+			background-image: url('images/update.png');
+			background-position:20px 6px;
+  			background-size:15%;
+			background-repeat: no-repeat;
+			padding-left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<h1>STAFF</h1>
+			<hr>
+			<div class="staff">
+				<button onclick="get_addStaff()" class="button1">ADD STAFF</button>
+				<button onclick="get_viewStaff()" class="button2">VIEW STAFF</button>
+				<button onclick="get_deleteStaff()" class="button3">DELETE STAFF</button>
+				<button onclick="get_updateStaff()" class="button4">UPDATE STAFF</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

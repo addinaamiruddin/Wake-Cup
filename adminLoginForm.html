@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Login</title>
+  <script type="text/javascript">
+    function get_adminDashboard()
+    {
+      document.location.href="adminDashboard.html";
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="adminLoginForm.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+        <h1 class="admin">Admin Login</h1>
+        <hr/><br/>
+        <form>
+          <input id="name" type="name" placeholder="Username">
+          <input type="password" name="password" placeholder="Password">
+        </form>
+        <br/>
+        <div class="login">
+          <br/>
+          <button onclick="get_adminDashboard()">Log In</button>
+        </div>
+        <div class="login">
+          <br/>
+          <input id="check" type="checkbox">
+          <label for="check">Keep me Logged in</label>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

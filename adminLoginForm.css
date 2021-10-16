@@ -1,0 +1,78 @@
+body{
+    background-image: url("images/bg img.jpg");
+    background-size: cover;
+    opacity: 95%;
+}
+@font-face{
+    font-family: sora;
+    src:  url(fonts/sora.ttf);
+}
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'sora';
+    text-align: center;
+}
+.content{
+    background-color: #e2d0c3;
+    width: 450px;
+    height: 450px;
+    box-shadow: 0px 8px 60px -10px #ceb19c;
+    border-radius: 10px;
+    padding:70px;
+    padding-top:5px;
+}
+.admin{
+    background-image: url("images/admin.png");
+    background-size: 15%;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+
+}
+input[type=name] {
+    width: 100%;
+    background-color: #dbc5b6;
+    background-image: url('images/username.png');
+    background-position:5px 5px;
+    background-size:9%;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+input[type=password] {
+    width: 100%;
+    background-color: #dbc5b6;
+    background-image: url('images/password.png');
+    background-position:5px 5px;
+    background-size:9%;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+input{
+    padding: 20px 20px;
+    margin: 3px 0;
+    box-sizing: border-box;
+    border: 1px solid #3b291d;
+    border-bottom: 5px solid #a37351;
+    border-radius: 10px;
+    font-family: 'sora';
+}
+button{
+  width:40%;
+  padding: 10px 20px;
+  margin: 3px 0;
+  background-color: #966a4a; 
+  border: 2px solid #3b291d;
+  border-radius: 50px;
+  color: #efe5db;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  font-family: 'sora';
+}

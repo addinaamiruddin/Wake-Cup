@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Secure Checkout</title>
+	<script type="text/javascript">
+		function get_ratingForm()
+		{
+			document.location.href="commentAndRatingForm.html";
+		}
+	</script>
+	<style type="text/css">
+		body{
+			background-image: url("images/bg img2.jpg");
+			background-size: cover;
+			opacity: 95%;
+			}
+		@font-face{
+			font-family: sora;
+			src:  url(fonts/sora.ttf);
+			}
+		.wrapper{
+			position: fixed;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+  			margin-left: auto;
+  			margin-right: auto;
+  			font-family: 'sora';
+  			text-align: center;
+		}
+		.content{
+			background-color: #e2d0c3;
+			width: 450px;
+			height: 350px;
+			box-shadow: 0px 8px 60px -10px #ceb19c;
+			border-radius: 10px;
+			padding:70px;
+			padding-top:5px;
+		}
+		button{
+			width:50%;
+			padding: 10px 20px;
+			margin: 15px 0;
+			background-color: #966a4a; 
+			border: 2px solid #3b291d;
+			border-radius: 50px;
+			color: #efe5db;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			cursor:pointer;
+			font-family: 'sora';
+		}
+		textarea{
+			background-color: #dbc5b6;
+			background-image: url('images/address.png');
+			background-position:5px 5px;
+			background-size:12%;
+			background-repeat: no-repeat;
+			padding-left: 70px;
+			padding-right: 10px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			width:100%;
+			margin: 3px 0;
+			box-sizing: border-box;
+			border: 1px solid #3b291d;
+			border-bottom: 5px solid #a37351;
+			font-family: 'sora';
+			}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<h1>Delivery Details</h1>
+			<hr>
+			<div class="choice">
+				<h4>Would you like us to deliver your products to you?</h4>
+				<p><input type="radio" name="deliver" value="yes">Yes</input><input type="radio" name="deliver" value="no">No</p>
+				<h4>If yes, please insert your address and the delivery fee will be RM 7.00</h4>
+				<textarea rows="2" cols="50" placeholder="Your Address"></textarea>
+				<br>
+				<button onclick="get_ratingForm()">Pay</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

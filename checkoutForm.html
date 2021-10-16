@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Secure Checkout</title>
+  <script type="text/javascript">
+    function get_deliveryForm()
+    {
+      document.location.href="deliveryForm.html";
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="checkoutForm.css">
+</head>
+<body>
+  <div class="wrapper">
+  <div class="card">  
+    <h2 class="visa">VISA</h2>
+    <h3 class="num">#eg# 4539  7111  0342  0778</h3>
+
+      <h4>NAME</br>Lisa</h4>
+      <h4>EXP</br>12/31</h4>
+      <h4>CVC</br>012</h4>
+
+  </div>
+  <div class="main">
+    <div class="content">
+      <h1>Payment Details</h1>
+      <form>
+        <input id="name" type="name" placeholder="Name">
+        <input type="text" placeholder="Credit Card Number">
+        <input type="month">
+        <input type="user" placeholder="CVC">
+      </form>
+      <div class="payment">
+        <h4>Payment Amount :<div class ="amount"> RM</div></h4> 
+        <button onclick="get_deliveryForm()">Proceed</button>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

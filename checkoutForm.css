@@ -1,0 +1,140 @@
+@font-face{
+  font-family: sora;
+  src:  url(fonts/sora.ttf);
+}
+
+body{
+  background-image: url("images/bg img2.jpg");
+  background-size: cover;
+  opacity: 95%;
+}
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+.content h1{
+  font-family: 'sora';
+}
+.main{
+  background-color: #e2d0c3;
+ 
+  width: 450px;
+  height: 350px;
+  box-shadow: 0px 8px 60px -10px #ceb19c;
+  border-radius: 10px;
+  padding:70px;
+  padding-top:10px;
+}
+.content{
+  padding-top:10px;
+  padding-left:140px;
+  font-family: 'sora';
+}
+
+input[type=name] {
+  background-color: #dbc5b6;
+  background-image: url('images/user.png');
+  background-position:5px 5px;
+  background-size:9%;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+input[type=text] {
+  background-color: #dbc5b6;
+  background-image: url('images/credit-card.png');
+  background-position:5px 5px;
+  background-size:9%;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+input[type=month] {
+  width :66%;
+  background-color: #dbc5b6;
+  background-image: url('images/calendar.png');
+  background-position:5px 5px;
+  background-size:14%;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  padding-bottom:13px;
+  font-family: 'Montserrat Medium';
+}
+input[type=user] {
+  width :32.5%;
+  background-color: #dbc5b6;
+  background-image: url('images/pin.png');
+  background-position:5px 5px;
+  background-size:31%;
+  background-repeat: no-repeat;
+  padding-left: 42px;
+}
+
+input{
+  width:100%;
+  padding: 15px 10px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  border: 1px solid #3b291d;
+  border-bottom: 5px solid #a37351;
+  font-family: 'sora';
+}
+.payment{
+  font-family: 'sora';
+}
+.amount{
+  float:right;
+  right:0;
+  font-family: 'sora';
+}
+button{
+  width:100%;
+  padding: 10px 20px;
+  margin: 3px 0;
+  background-color: #966a4a; 
+  border: 2px solid #3b291d;
+  border-radius: 50px;
+  color: #efe5db;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  font-family: 'sora';
+}
+
+.card{
+  background-image: linear-gradient(to bottom right, #ceb19c, #c19c82, #b48768, #ae7d5b, #966a4a);
+  position:fixed;
+  right:70%;
+  top:25%;
+  float:left;
+  
+  width:300px;
+  height:200px;
+  border-radius: 10px;
+  font-family: 'Montserrat Thin';
+}
+
+.visa{
+  padding-left:220px;
+  font-style: italic;
+  text-shadow: #d5bba9 3px 0 1px;
+  color:#3b291d;
+}
+.num{
+  color:#3b291d;
+  text-align:center;
+  padding-top:20px;
+  line-height:0;
+}
+.card h4{
+  color:#3b291d;
+  float:left;
+  width:33%;
+  text-align:center;
+}

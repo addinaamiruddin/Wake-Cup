@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+	<title>VIEW STAFF</title>
+	
+	<style>
+	
+		.viewStaff {
+						    position: absolute;
+						    top: 50%;
+						    left: 50%;
+						    transform: translate(-50%, -57%);
+						    width: 800px;
+						    height: 500px;
+						    text-align: center;
+						    display: flex;
+						    color: white;
+						    box-shadow: 0px 8px 60px -10px #ceb19c;
+						    border: 2px solid #896044;
+						   }
+		
+		
+		.info {
+				  width: 45%;
+				  padding: 20px 0;
+				  opacity : 0.8;
+				  margin-top : -20px;
+				  margin-bottom : 50px;
+			}
+		.info img{
+			height: 500px;
+			border-radius: 2px;
+		}
+	
+		/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+		
+		* {
+			font-family: 'Open Sans', sans-serif;
+		  }*/
+		@font-face{
+			font-family: aclonica;
+			src:  url(fonts/aclonica.ttf);
+			}
+		@font-face{
+			font-family: sora;
+			src:  url(fonts/sora.ttf);
+			}
+		*{
+			font-family: 'sora';
+		}
+		body {
+				margin: 0;
+				padding: 5px;
+			    overflow: hidden;
+				background-image : url("images/bg img3.jpeg");
+				background-repeat: no-repeat;
+				background-size : 1536px 900px;
+		     }
+			 
+		.staff_page {
+						width: 70%;
+						padding: 2px 0;
+						background : #e2d0c3;
+						opacity : 0.95;
+						border-radius: 2px;
+		             }
+					 
+		.staff_page h2 {
+							font-weight: bold;
+							background-color : #c19c82;
+							color : black;
+							padding : 10px;
+							font-family: 'aclonica';
+						}
+					 
+		/*.inputFields {
+						margin: 15px 0;
+					    font-size: 16px;
+					    padding: 8px;
+					    width: 250px;
+					    border : 2px solid #553c2a;
+					    border-radius: 5px;
+					    color: black;
+						background-color : #FEFCFF;
+						font-weight : bold;
+		             }*/
+		.inputFields{
+			margin: 13px 0;
+			font-size: 16px;
+			padding: 10px;
+			width: 75%;
+		  box-sizing: border-box;
+		  border: 1px solid #3b291d;
+		  border-bottom: 5px solid #a37351;
+		  font-family: 'sora';
+		}
+					 
+		#optGender  {
+						width: 75%;
+						padding : 8px;
+						margin: 15px 0;
+						font-size: 16px;
+						color: black;
+						font-weight : bold;
+						background-color: #dbc5b6;
+						background-image: url('images/gender.png');
+						background-position:5px 5px;
+						background-size:9%;
+						background-repeat: no-repeat;
+						padding-left: 40px;
+						box-sizing: border-box;
+						border: 1px solid #3b291d;
+						border-bottom: 5px solid #a37351;
+					}
+					 
+		.noBullet {
+					list-style-type: none;
+		          }
+				  
+		#add-btn {
+					border: 2px solid #553c2a;
+				    background-color: #e2d0c3;
+				    font-size: 18px;
+				    color: black;
+				    margin-top: 45px;
+				    padding: 9px 50px;
+				    cursor: pointer;
+					float : right;
+					opacity : 1.0;
+		         }
+		#add-btn:hover {
+							background-color : #6f4e37;
+							color : white;
+							border: 2px solid #201710;
+							border-bottom-style: groove;
+							border-bottom-color: #624531;
+						 }
+		input[type=text] {
+		  background-color: #dbc5b6;
+		  background-image: url('images/name.png');
+		  background-position:5px 5px;
+		  background-size:9%;
+		  background-repeat: no-repeat;
+		  padding-left: 40px;
+		}
+		input[type=tel] {
+		  background-color: #dbc5b6;
+		  background-image: url('images/contact.png');
+		  background-position:5px 5px;
+		  background-size:9%;
+		  background-repeat: no-repeat;
+		  padding-left: 40px;
+		}
+		input[type=email] {
+		  background-color: #dbc5b6;
+		  background-image: url('images/email.png');
+		  background-position:5px 5px;
+		  background-size:9%;
+		  background-repeat: no-repeat;
+		  padding-left: 40px;
+		}
+		textarea{
+		background-color: #dbc5b6;
+		  background-image: url('images/address.png');
+		  background-position:5px 5px;
+		  background-size:9%;
+		  background-repeat: no-repeat;
+		  padding-left: 40px;
+			padding-right: 10px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			width:75%;
+			margin: 3px 0;
+			box-sizing: border-box;
+			border: 1px solid #3b291d;
+			border-bottom: 5px solid #a37351;
+			font-size: 16px;
+		}
+	</style>
+	
+	<script>
+		function get_confirmation()
+		{
+			alert("Data has been added sucessfully. \nThank you!");
+		}
+	</script>
+</head>
+
+<body>
+	<div class="viewStaff">
+	
+	<div class="info">
+		<img src= "images/logo3.jpg" alt= "coffee_logo_edited" width= "350px" height= "470px"/>
+    </div>
+  
+	<form class= "staff_page" name= "staff_page" method= "post" action= "">
+		
+		<h2>VIEW STAFF</h2>
+		
+		<ul class="noBullet">
+			<li>
+				<label for="Name"></label>
+				<input type="text" class="inputFields" id="StaffName" name="StaffName" placeholder="NAME" value=""/>
+			</li>
+			
+			<li>
+				<label for="Contact"></label>
+				<input type="tel" class="inputFields" id="StaffContact" name="StaffContact" placeholder="CONTACT NUMBER" value=""/>
+			</li>
+			
+			<li>
+				<label for="Gender"></label>
+				<select id= "optGender">
+					<option  value= "Male">Male</option>
+					<option  value= "Female">Female</option>
+				</select>
+			</li>
+			
+			<li>
+				<label for="Email"></label>
+				<input type="email" class="inputFields" id="email" name="email" placeholder="EMAIL" value=""/>
+			</li>
+			
+			<li>
+				<label for="Address"></label>
+				<textarea class="address" id="address" name="staff_address" placeholder= "ADDRESS" rows="2" cols="50"></textarea>
+			</li>
+			
+			<li id="center-btn">
+				<input type="submit" id="add-btn" name="VIEW STAFF" alt="VIEW STAFF" value="VIEW STAFF" onclick= "get_confirmation()">
+			</li>
+		</ul>
+	</form>
+	</div>
+</body>
+
+</html>
