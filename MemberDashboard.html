@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+	<title>MEMBER DASHBOARD</title>
+	
+	<style>
+		body {
+				background-image : url("image/ds_bg.jpg");
+				background-repeat : no-repeat;
+				background-size : 1536px 961px;
+				background-height : auto;
+			 }
+			 
+		h1 {
+				color : #151B54;
+				padding : 10px 10px;
+				font-size : 70px;
+				text-align : center;
+				margin-top : 260px;
+				background-image: linear-gradient(to right, #FFDFDD , #EDC9AF);
+				opacity : 0.8;
+				margin-right : 305px;
+				margin-left : 305px;
+				letter-spacing : 5px;
+				font-family : Brush Script MT;
+		   }
+		
+		p .button {
+					padding : 10px 20px;
+					display : block;
+					cursor : pointer;
+					margin-bottom : 30px;
+					margin-left : 10px;
+					font-size : 16px;
+					font-family : American Typewriter;
+					background-image: linear-gradient(to right, #C35817 , #C36241);
+					opacity : 0.9;
+					letter-spacing : 2px;
+					color : white;
+					font-weight : 900;
+		          }
+		
+		p .button:hover {
+							color : black;
+							border : 10px white;
+							border-bottom-style: groove;
+							opacity : 1.0;
+							font-weight : 5px;
+					    }
+	</style>
+	
+	<script>
+		function get_addPage()
+		{
+			document.location.href= "Add_Page.html";
+		}
+		function get_viewPage()
+		{
+			document.location.href= "View_Page.html";
+		}
+		function get_deletePage()
+		{
+			document.location.href= "Delete_Page.html";
+		}
+		function get_updatePage()
+		{
+			document.location.href= "Update_Page.html";
+		}
+	</script>
+	
+</head>
+<body>
+	<h1>MEMBER</h1>
+	
+	<p>
+		<input type="button" class="button" value="ADD MEMBER" onclick= "get_addPage()">
+		<input type="button" class="button" value="VIEW MEMBER" onclick= "get_viewPage()">
+		<input type="button" class="button" value="DELETE MEMBER" onclick= "get_deletePage()">
+		<input type="button" class="button" value="UPDATE MEMBER" onclick= "get_updatePage()">
+	</p>
+</body>
+</html>

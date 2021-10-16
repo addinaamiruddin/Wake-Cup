@@ -1,0 +1,211 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+	<title>ADD MEMBER</title>
+	
+	<style>
+	
+		.addMemberSection {
+						    position: absolute;
+						    top: 50%;
+						    left: 50%;
+						    transform: translate(-50%, -65%);
+						    width: 800px;
+						    height: 480px;
+						    text-align: center;
+						    display: flex;
+						    color: white;
+						    border : 3px solid #FEFCFF;
+						   }
+		
+		
+		.info {
+				  width: 45%;
+				  padding: 20px 0;
+				  opacity : 0.6;
+				  margin-top : -20px;
+				  margin-bottom : 50px;
+					 
+				  p {
+						font-size: 18px;
+				    }
+			}
+	
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+		
+		* {
+			font-family: 'Open Sans', sans-serif;
+		  }
+		  
+		body {
+				margin: 0;
+				padding: 5px;
+			    overflow: hidden;
+				background-image : url("image/AVUD.jpg");
+				background-repeat: no-repeat;
+				background-size : 1536px 900px;
+		     }
+			 
+		.member_page {
+						width: 70%;
+						padding: 2px 0;
+						background : #34282C;
+						opacity : 0.95;
+		             }
+					 
+		.member_page h2 {
+							font-weight: bold;
+							background-color : #E9AB17;
+							color : black;
+							padding : 10px;
+						}
+					 
+		.inputFields {
+						margin: 15px 0;
+					    font-size: 16px;
+					    padding: 8px;
+					    width: 250px;
+					    border : 4px solid #00FF00;
+					    color: black;
+						background-color : #FEFCFF;
+						font-weight : bold;
+		             }
+					 
+		#optGender  {
+						width : 305px;
+						padding : 8px;
+						margin: 15px 0;
+						font-size: 16px;
+						border : 4px solid #00FF00;
+						color: black;
+						background-color : #FEFCFF;
+						font-weight : bold;
+						background-image: url('image/gender.png');
+						background-position:5px 5px;
+						background-size:9%;
+						background-repeat: no-repeat;
+						padding-left: 40px
+					}
+					 
+		.noBullet {
+					list-style-type: none;
+					padding: 0;
+		          }
+				  
+		#add-btn {
+					border: 3px solid #5C3317;
+				    background : #008000;
+				    font-size: 18px;
+				    color: white;
+				    margin-top: 25px;
+				    padding: 9px 50px;
+				    cursor: pointer;
+					float : right;
+					opacity : 1.0;
+		         }
+		#add-btn:hover {
+							background-color: #3E8E41;
+							color : white;
+							border-bottom-style: groove;
+							border-bottom-color: #ff9900;
+						 }
+		input[type=text]
+		{
+			background-image: url("image/name.png");
+			background-position:5px 5px;
+			background-size:9%;
+			background-repeat: no-repeat;
+			padding-left: 40px;
+		}
+		input[type=tel]
+		{
+			background-image: url("image/contact.png");
+			background-position:5px 5px;
+			background-size:9%;
+			background-repeat: no-repeat;
+			padding-left: 40px;
+		}
+		input[type=email]
+		{
+			background-image: url("image/email.png");
+			background-position:5px 5px;
+			background-size:9%;
+			background-repeat: no-repeat;
+			padding-left: 40px;
+		}
+		textarea{
+					background-image: url("image/address.png");
+					background-position:5px 5px;
+					background-size:9%;
+					background-repeat: no-repeat;
+					padding-left: 40px;
+					padding-right: 50px;
+					padding-top: 10px;
+					padding-bottom: 20px;
+					width:69%;
+					margin: 15px 0;
+					box-sizing: border-box;
+					border : 4px solid #00FF00;
+					font-size: 16px;
+				}
+	</style>
+	
+	<script>
+		function get_confirmation()
+		{
+			alert("Data has been added sucessfully. \nThank you!");
+		}
+	</script>
+</head>
+
+<body>
+	<div class="addMemberSection">
+	
+	<div class="info">
+		<img src= "image/coffee_logo_edited.jpg" alt= "coffee_logo_edited" width= "370px" height= "480px"/>
+    </div>
+  
+	<form class= "member_page" name= "member_page" method= "post" action= "">
+		
+		<h2>ADD MEMBER</h2>
+		
+		<ul class="noBullet">
+			<li>
+				<label for="Name"></label>
+				<input type="text" class="inputFields" id="MemberName" name="MemberName" placeholder="NAME" value=""/>
+			</li>
+			
+			<li>
+				<label for="Contact"></label>
+				<input type="tel" class="inputFields" id="MemberContact" name="MemberContact" placeholder="CONTACT NUMBER" value=""/>
+			</li>
+			
+			<li>
+				<label for="Gender"></label>
+				<select id= "optGender">
+					<option  value= "Male">Male</option>
+					<option  value= "Female">Female</option>
+				</select>
+			</li>
+			
+			<li>
+				<label for="Email"></label>
+				<input type="email" class="inputFields" id="email" name="email" placeholder="EMAIL" value=""/>
+			</li>
+			
+			<li>
+				<label for="Address"></label>
+				<textarea class="address" id="adress" name="member_adress" placeholder= "ADDRESS" rows="2" cols="50"></textarea>
+			</li>
+			
+			<li id="center-btn">
+				<input type="submit" id="add-btn" name="ADD MEMBER" alt="ADD MEMBER" value="ADD MEMBER" onclick= "get_confirmation()">
+			</li>
+		</ul>
+	</form>
+	</div>
+</body>
+
+</html>
