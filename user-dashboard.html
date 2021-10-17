@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <title>User Dashboard</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav_icon" onclick="toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="navbar__left">
+          <a class="active_link" href="#">Dashboard</a>
+          <a href="#">Purchase</a>
+          <a href="#">Notifications</a>
+        </div>
+        <div class="navbar__right">
+          <a href="#">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <img width="30" src="assets/avatar.svg" alt="" />
+            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+          </a>
+        </div>
+      </nav>
+
+      <main>
+        <div class="main__container">
+          <!-- RECENT PURCHASE START HERE -->
+
+          <div class="main__title">
+            <img src="assets/hello.svg" alt="" />
+            <div class="main__greeting">
+              <h1>Recent Purchase</h1>
+
+            </div>
+          </div>
+          <div class="activity">
+            <table style="width: 100%;">
+              <tr>
+                <th style="width: 15px; border-radius: 5px 0 0 5px;">Date</th>
+                <th style="width: 45%;">Item</th>
+                <th style="width: 20%;">Weight</th>
+                <th style="width: 20%; border-radius: 0 5px 5px 0;">Price</th>
+              </tr>
+              <tr>
+                <td>19/10/2021</td>
+                <td>Lazarus</td>
+                <td>250 gram</td>
+                <td>RM50.00</td>
+              </tr>
+              <tr>
+                <td>10/10/2021</td>
+                <td>Colombia Excelso Organic</td>
+                <td>500 gram</td>
+                <td>RM100.00</td>
+              </tr>
+              <tr>
+                <td>29/09/2021</td>
+                <td>Honduras Liquidambar</td>
+                <td>250 gram</td>
+                <td>RM45.00</td>
+              </tr>
+            </table>
+          </div>
+          <!--RECENT PURCHASE END HERE-->
+          <br>
+          <!--ONGOING DELIVERIES START HERE-->
+  
+            <div class="main__title">
+              <img src="assets/hello.svg" alt="" />
+              <div class="main__greeting">
+                <h1>Ongoing Deliveries</h1>
+
+              </div>
+            </div>
+            <div class="activity">
+              <table style="width: 100%;">
+                <tr>
+                  <th style="width: 25px; border-radius: 5px 0 0 5px;">Date Purchased</th>
+                  <th style="width: 35%;">Order ID</th>
+                  <th style="width: 20%;">Status</th>
+                  <th style="width: 20%; border-radius: 0 5px 5px 0;">Update</th>
+                </tr>
+                <tr>
+                  <td>29/09/2021</td>
+                  <td>D0094</td>
+                  <td>Shipped</td>
+                  <td><a href="#" class="btn">Received</a></td>
+                </tr>
+                <tr>
+                  <td>29/09/2021</td>
+                  <td>D0903</td>
+                  <td>Shipped</td>
+                  <td><a href="#" class="btn">Received</a></td>
+                </tr>
+                <tr>
+                  <td>29/09/2021</td>
+                  <td>D5578</td>
+                  <td>On Delivery</td>
+                  <td><a href="#" class="btn">Received</a></td>
+                </tr>
+                
+              </table>
+            </div>
+
+      </main>
+
+      <!--sidebar starts here SIAP-->
+      <div id="sidebar">
+        <div class="sidebar__title">
+          <div class="sidebar__img">
+            <img src="coffee-icon-removebg.png">
+          </div>
+          <i
+            onclick="closeSidebar()"
+            class="fa fa-times"
+            id="sidebarIcon"
+            aria-hidden="true"
+          ></i>
+        </div>
+
+        <div class="sidebar__menu">
+          <div class="sidebar__link active_menu_link">
+            <i class="fa fa-home"></i>
+            <a href="#">Dashboard</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-money"></i>
+            <a href="#">Purchase</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-envelope-open-o"></i>
+            <a href="#">Notifications</a>
+          </div>
+          <br>
+          <br>
+          <br>
+
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-pencil-square-o"></i>
+            <a href="#">Edit Profile</a>
+          </div>
+          <div class="sidebar__logout">
+            <i class="fa fa-power-off"></i>
+            <a href="#">Log out</a>
+          </div>
+        </div>
+      </div>
+      <!--sidebar ends here-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
