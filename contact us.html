@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face{
+	font-family:myFont;
+	src:url('WorkSans-VariableFont_wght.ttf');
+}
+*{
+margin:0;
+padding:0;
+font-family:myFont;
+color:white;
+}
+
+body{
+background-image:url("beans.jpg");
+background-repeat:repeat-x;
+background-attachment: fixed;
+background-position: center;
+text-align:center;
+width:100%;
+height:auto;
+overflow:hidden;
+background-color:#6f4e37;
+}
+
+.text{
+margin-top:-1%;
+}
+.text h1{
+
+font-size:100px;
+}
+.text img{
+float:left;
+width:100px;
+height:100px;
+border-radius:50%; 
+position:absolute;
+left:21%;
+top:30%;
+margin-left:1em;
+}
+.text a{
+text-decoration:none;
+font-size:40px;
+position:absolute;
+left:30%;
+top:30%;
+margin-left:1em;
+}
+
+.text a:hover{
+color:#d4af37;
+}
+.text a::after{
+content:"";
+	display:block;
+	height:3px;
+	background-color:#d4af37;
+	width:0%;
+	transition:all ease-in-out 300ms;
+}
+.text a:hover::after{
+	width:100%;
+}
+.text2 a{
+text-decoration:none;
+font-size:40px;
+position:absolute;
+left:30%;
+top:37%;
+margin-left:1em;
+}
+.text2 a:hover{
+color:#d4af37;
+}
+.text2 a::after{
+content:"";
+	display:block;
+	height:3px;
+	background-color:#d4af37;
+	width:0%;
+	transition:all ease-in-out 300ms;
+}
+.text2 a:hover::after{
+	width:100%;
+}
+.logo img{
+width:100px;
+height:100px;
+}
+.insta{
+float:left;
+}
+.insta img{
+width:100px;
+height:100px;
+position:absolute;
+left:22%;
+top:68%;
+border-radius:50%; 
+}
+.insta a{
+text-decoration:none;
+font-size:40px;
+position:absolute;
+left:30%;
+top:70%;
+margin-left:1em;
+}
+.insta a:hover{
+color:#d4af37;
+}
+.insta a::after{
+content:"";
+	display:block;
+	height:3px;
+	background-color:#d4af37;
+	width:0%;
+	transition:all ease-in-out 300ms;
+}
+.insta a:hover::after{
+	width:100%;
+}
+.location img{
+width:100px;
+height:100px;
+position:absolute;
+left:22%;
+top:49%;
+border-radius:50%; 
+}
+.location a{
+text-decoration:none;
+font-size:40px;
+position:absolute;
+left:30%;
+top:55%;
+margin-left:1em;
+}
+.location a:hover{
+color:#d4af37;
+}
+.location a::after{
+content:"";
+	display:block;
+	height:3px;
+	background-color:#d4af37;
+	width:0%;
+	transition:all ease-in-out 300ms;
+}
+.location a:hover::after{
+	width:100%;
+}
+.center{
+border-radius:50%;
+}
+</style>
+</head>
+<body>
+<div class="logo">
+<a href="index.html"><img src="kopilogo.jpeg" class="center"></a>
+</div>
+<div class="text">
+<h1>Contact Us</h1>
+<img src="email.png">
+<a href="mailto:wakeupcust@example.com">Contact Email For Our Customer Feedback</a>
+
+</div>
+<div class="text2">
+<a href="mailto:wakeupworkers@example.com">Contact Email For Job Application</a>
+</div>
+<div class="insta">
+<img src="insta.jpg">
+<a href="https://www.instagram.com/" target="_blank">Check Out Our Instagram Account</a>
+
+</div>
+<div class="location">
+<img src="location.jpg">
+<a href="https://www.google.com/maps/place/Wake+Cup+Coffee/@-6.179118,106.7981812,15z/data=!4m9!1m2!2m1!1swake+cup+coffee!3m5!1s0x2e69f6784e355735:0xf72cb9f92bcf3026!8m2!3d-6.1684222!4d106.8153825!15sCg93YWtlIGN1cCBjb2ZmZWVaESIPd2FrZSBjdXAgY29mZmVlkgEEY2FmZQ" target="_blank">Location</a>
+</div>
+</body>
+</html>
