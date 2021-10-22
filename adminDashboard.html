@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="AdminDashboard.css">
+	<script type="text/javascript">
+		function toggleMenu(){
+			let toggle=document.querySelector('.toggle');
+			let navigation=document.querySelector('.navigation');
+			let main=document.querySelector('.main');
+			toggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+			main.classList.toggle('active');
+		}
+		function get_staffPage(){
+			document.location.href="staffPage.html";
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="#">
+					<span class="icon"><i class="fa fa-coffee" aria-hidden="true"></i></span>
+					<span class="title"><h2>Wake Cup</h2></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+					<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+					<span class="title" onclick="get_staffPage()">Staffs</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+					<span class="title">Customers</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span class="icon"><i class="fa fa-archive" aria-hidden="true"></i></span>
+					<span class="title">Product Category</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+					<span class="title">Order</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+					<span class="title">Sales Report</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="main">
+		<div class="topbar">
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<div class="search">
+				<label>
+					<input type="text" placeholder="Search here">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</label>
+			</div>
+			<div class="user">
+				<img src="images/user2.png">
+			</div>
+		</div>
+
+		<div class="cardBox">
+			<div class="card">
+			<div>
+				<div class="numbers">539</div>
+				<div class="cardName">Daily Visits</div>
+			</div>
+			<div class="iconBox">
+				<i class="fa fa-eye" aria-hidden="true"></i>
+			</div>
+			</div>
+			<div class="card">
+			<div>
+				<div class="numbers">75</div>
+				<div class="cardName">Daily Sales</div>
+			</div>
+			<div class="iconBox">
+				<i class="fa fa-money" aria-hidden="true"></i>
+			</div>
+			</div>
+			<div class="card">
+			<div>
+				<div class="numbers">112</div>
+				<div class="cardName">Comments</div>
+			</div>
+			<div class="iconBox">
+				<i class="fa fa-comments-o" aria-hidden="true"></i>
+			</div>
+			</div>
+			<div class="card">
+			<div>
+				<div class="numbers">RM1,527</div>
+				<div class="cardName">Earning</div>
+			</div>
+			<div class="iconBox">
+				<i class="fa fa-usd" aria-hidden="true"></i>
+			</div>
+			</div>
+		</div>
+
+		<div class="details">
+			<div class="recentOrders">
+				<div class="cardHeader">
+					<h2>Recent Orders</h2>
+					<a href="#" class="btn">View All</a>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<td>Coffee</td>
+							<td>Type</td>
+							<td>Price</td>
+							<td>Payment</td>
+							<td>Status</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Ethiopia Kochere Kesha GR1</td>
+							<td>Light</td>
+							<td>RM60</td>
+							<td>Paid</td>
+							<td><span class="status delivered">Delivered</span></td>
+						</tr>
+						<tr>
+							<td>Espresso Supreme</td>
+							<td>Medium</td>
+							<td>RM36</td>
+							<td>Due</td>
+							<td><span class="status pending">Pending</span></td>
+						</tr>
+						<tr>
+							<td>Ethiopia Kochere Kesha GR1</td>
+							<td>Dark</td>
+							<td>RM60</td>
+							<td>Paid</td>
+							<td><span class="status delivered">Delivered</span></td>
+						</tr>
+						<tr>
+							<td>Colombia Excelso Organic</td>
+							<td>Medium</td>
+							<td>RM50</td>
+							<td>Paid</td>
+							<td><span class="status no">No Delivery</span></td>
+						</tr>
+						<tr>
+							<td>Swiss Water Decaf Premium Espresso Blend</td>
+							<td>Dark</td>
+							<td>RM65</td>
+							<td>Paid</td>
+							<td><span class="status delivered">Delivered</span></td>
+						</tr>
+						<tr>
+							<td>Indonesia Kamu Kamu</td>
+							<td>Light</td>
+							<td>RM50</td>
+							<td>Due</td>
+							<td><span class="status pending">Pending</span></td>
+						</tr>
+						<tr>
+							<td>Espresso Supreme</td>
+							<td>Light</td>
+							<td>RM36</td>
+							<td>Paid</td>
+							<td><span class="status delivered">Delivered</span></td>
+						</tr>
+						<tr>
+							<td>Guatemala El Boqueron</td>
+							<td>Dark</td>
+							<td>RM54</td>
+							<td>Paid</td>
+							<td><span class="status no">No Delivery</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="recentCustomers">
+				<div class="cardHeader">
+					<h2>Recent Customers</h2>
+				</div>
+				<table>
+					<tbody>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="images/coffee1.png"></div></td>
+							<td><h4>David<br><span>Mon, 12 Dec 2021</span></h4></td>
+						</tr>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="images/coffee2.png"></div></td>
+							<td><h4>Ali<br><span>Thu, 26 Nov 2021</span></h4></td>
+						</tr>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="images/coffee3.png"></div></td>
+							<td><h4>Amelia<br><span>Fri, 18 Nov 2021</span></h4></td>
+						</tr>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="images/coffee4.png"></div></td>
+							<td><h4>Olivia<br><span>Sun, 3 Nov 2021</span></h4></td>
+						</tr>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="images/coffee5.png"></div></td>
+							<td><h4>Yae<br><span>Fri, 1 Nov 2021</span></h4></td>
+						</tr>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="images/coffee6.png"></div></td>
+							<td><h4>Jung<br><span>Wed, 19 Oct 2021</span></h4></td>
+						</tr>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="images/coffee7.png"></div></td>
+							<td><h4>Alex<br><span>Sat, 15 Oct 2021</span></h4></td>
+						</tr>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="images/coffee8.png"></div></td>
+							<td><h4>Sheena<br><span>Fri, 14 Oct 2021</span></h4></td>
+						</tr>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="images/coffee9.png"></div></td>
+							<td><h4>Diana<br><span>Mon, 10 Oct 2021</span></h4></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
